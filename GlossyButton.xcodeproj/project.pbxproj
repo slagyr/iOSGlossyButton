@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C374B7161607C95F00D6867C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C374B7151607C95F00D6867C /* UIKit.framework */; };
+		C374B7181607C95F00D6867C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C374B7171607C95F00D6867C /* Foundation.framework */; };
+		C374B71A1607C95F00D6867C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C374B7191607C95F00D6867C /* CoreGraphics.framework */; };
+		C374B7201607C95F00D6867C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C374B71E1607C95F00D6867C /* InfoPlist.strings */; };
+		C374B7221607C95F00D6867C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C374B7211607C95F00D6867C /* main.m */; };
+		C374B7261607C95F00D6867C /* ELAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C374B7251607C95F00D6867C /* ELAppDelegate.m */; };
+		C374B7291607C95F00D6867C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C374B7271607C95F00D6867C /* MainStoryboard_iPhone.storyboard */; };
+		C374B72C1607C95F00D6867C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C374B72A1607C95F00D6867C /* MainStoryboard_iPad.storyboard */; };
+		C374B72F1607C95F00D6867C /* ELViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C374B72E1607C95F00D6867C /* ELViewController.m */; };
+		C374B7371607C95F00D6867C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C374B7361607C95F00D6867C /* SenTestingKit.framework */; };
+		C374B7381607C95F00D6867C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C374B7151607C95F00D6867C /* UIKit.framework */; };
+		C374B7391607C95F00D6867C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C374B7171607C95F00D6867C /* Foundation.framework */; };
+		C374B7411607C95F00D6867C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C374B73F1607C95F00D6867C /* InfoPlist.strings */; };
+		C374B7441607C95F00D6867C /* GlossyButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C374B7431607C95F00D6867C /* GlossyButtonTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C374B73A1607C95F00D6867C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C374B7081607C95F00D6867C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C374B7101607C95F00D6867C;
+			remoteInfo = GlossyButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C374B7111607C95F00D6867C /* GlossyButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlossyButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C374B7151607C95F00D6867C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C374B7171607C95F00D6867C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C374B7191607C95F00D6867C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C374B71D1607C95F00D6867C /* GlossyButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlossyButton-Info.plist"; sourceTree = "<group>"; };
+		C374B71F1607C95F00D6867C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C374B7211607C95F00D6867C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C374B7231607C95F00D6867C /* GlossyButton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlossyButton-Prefix.pch"; sourceTree = "<group>"; };
+		C374B7241607C95F00D6867C /* ELAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAppDelegate.h; sourceTree = "<group>"; };
+		C374B7251607C95F00D6867C /* ELAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAppDelegate.m; sourceTree = "<group>"; };
+		C374B7281607C95F00D6867C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C374B72B1607C95F00D6867C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C374B72D1607C95F00D6867C /* ELViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELViewController.h; sourceTree = "<group>"; };
+		C374B72E1607C95F00D6867C /* ELViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELViewController.m; sourceTree = "<group>"; };
+		C374B7351607C95F00D6867C /* GlossyButtonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlossyButtonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C374B7361607C95F00D6867C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C374B73E1607C95F00D6867C /* GlossyButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlossyButtonTests-Info.plist"; sourceTree = "<group>"; };
+		C374B7401607C95F00D6867C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C374B7421607C95F00D6867C /* GlossyButtonTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlossyButtonTests.h; sourceTree = "<group>"; };
+		C374B7431607C95F00D6867C /* GlossyButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlossyButtonTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C374B70E1607C95F00D6867C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374B7161607C95F00D6867C /* UIKit.framework in Frameworks */,
+				C374B7181607C95F00D6867C /* Foundation.framework in Frameworks */,
+				C374B71A1607C95F00D6867C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C374B7311607C95F00D6867C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374B7371607C95F00D6867C /* SenTestingKit.framework in Frameworks */,
+				C374B7381607C95F00D6867C /* UIKit.framework in Frameworks */,
+				C374B7391607C95F00D6867C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C374B7061607C95F00D6867C = {
+			isa = PBXGroup;
+			children = (
+				C374B71B1607C95F00D6867C /* GlossyButton */,
+				C374B73C1607C95F00D6867C /* GlossyButtonTests */,
+				C374B7141607C95F00D6867C /* Frameworks */,
+				C374B7121607C95F00D6867C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C374B7121607C95F00D6867C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C374B7111607C95F00D6867C /* GlossyButton.app */,
+				C374B7351607C95F00D6867C /* GlossyButtonTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C374B7141607C95F00D6867C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C374B7151607C95F00D6867C /* UIKit.framework */,
+				C374B7171607C95F00D6867C /* Foundation.framework */,
+				C374B7191607C95F00D6867C /* CoreGraphics.framework */,
+				C374B7361607C95F00D6867C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C374B71B1607C95F00D6867C /* GlossyButton */ = {
+			isa = PBXGroup;
+			children = (
+				C374B7241607C95F00D6867C /* ELAppDelegate.h */,
+				C374B7251607C95F00D6867C /* ELAppDelegate.m */,
+				C374B7271607C95F00D6867C /* MainStoryboard_iPhone.storyboard */,
+				C374B72A1607C95F00D6867C /* MainStoryboard_iPad.storyboard */,
+				C374B72D1607C95F00D6867C /* ELViewController.h */,
+				C374B72E1607C95F00D6867C /* ELViewController.m */,
+				C374B71C1607C95F00D6867C /* Supporting Files */,
+			);
+			path = GlossyButton;
+			sourceTree = "<group>";
+		};
+		C374B71C1607C95F00D6867C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C374B71D1607C95F00D6867C /* GlossyButton-Info.plist */,
+				C374B71E1607C95F00D6867C /* InfoPlist.strings */,
+				C374B7211607C95F00D6867C /* main.m */,
+				C374B7231607C95F00D6867C /* GlossyButton-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C374B73C1607C95F00D6867C /* GlossyButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				C374B7421607C95F00D6867C /* GlossyButtonTests.h */,
+				C374B7431607C95F00D6867C /* GlossyButtonTests.m */,
+				C374B73D1607C95F00D6867C /* Supporting Files */,
+			);
+			path = GlossyButtonTests;
+			sourceTree = "<group>";
+		};
+		C374B73D1607C95F00D6867C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C374B73E1607C95F00D6867C /* GlossyButtonTests-Info.plist */,
+				C374B73F1607C95F00D6867C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C374B7101607C95F00D6867C /* GlossyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C374B7471607C95F00D6867C /* Build configuration list for PBXNativeTarget "GlossyButton" */;
+			buildPhases = (
+				C374B70D1607C95F00D6867C /* Sources */,
+				C374B70E1607C95F00D6867C /* Frameworks */,
+				C374B70F1607C95F00D6867C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlossyButton;
+			productName = GlossyButton;
+			productReference = C374B7111607C95F00D6867C /* GlossyButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C374B7341607C95F00D6867C /* GlossyButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C374B74A1607C95F00D6867C /* Build configuration list for PBXNativeTarget "GlossyButtonTests" */;
+			buildPhases = (
+				C374B7301607C95F00D6867C /* Sources */,
+				C374B7311607C95F00D6867C /* Frameworks */,
+				C374B7321607C95F00D6867C /* Resources */,
+				C374B7331607C95F00D6867C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C374B73B1607C95F00D6867C /* PBXTargetDependency */,
+			);
+			name = GlossyButtonTests;
+			productName = GlossyButtonTests;
+			productReference = C374B7351607C95F00D6867C /* GlossyButtonTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C374B7081607C95F00D6867C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EL;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Micah Martin";
+			};
+			buildConfigurationList = C374B70B1607C95F00D6867C /* Build configuration list for PBXProject "GlossyButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C374B7061607C95F00D6867C;
+			productRefGroup = C374B7121607C95F00D6867C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C374B7101607C95F00D6867C /* GlossyButton */,
+				C374B7341607C95F00D6867C /* GlossyButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C374B70F1607C95F00D6867C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374B7201607C95F00D6867C /* InfoPlist.strings in Resources */,
+				C374B7291607C95F00D6867C /* MainStoryboard_iPhone.storyboard in Resources */,
+				C374B72C1607C95F00D6867C /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C374B7321607C95F00D6867C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374B7411607C95F00D6867C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C374B7331607C95F00D6867C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C374B70D1607C95F00D6867C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374B7221607C95F00D6867C /* main.m in Sources */,
+				C374B7261607C95F00D6867C /* ELAppDelegate.m in Sources */,
+				C374B72F1607C95F00D6867C /* ELViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C374B7301607C95F00D6867C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374B7441607C95F00D6867C /* GlossyButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C374B73B1607C95F00D6867C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C374B7101607C95F00D6867C /* GlossyButton */;
+			targetProxy = C374B73A1607C95F00D6867C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C374B71E1607C95F00D6867C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C374B71F1607C95F00D6867C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C374B7271607C95F00D6867C /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C374B7281607C95F00D6867C /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C374B72A1607C95F00D6867C /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C374B72B1607C95F00D6867C /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C374B73F1607C95F00D6867C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C374B7401607C95F00D6867C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C374B7451607C95F00D6867C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C374B7461607C95F00D6867C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C374B7481607C95F00D6867C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlossyButton/GlossyButton-Prefix.pch";
+				INFOPLIST_FILE = "GlossyButton/GlossyButton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C374B7491607C95F00D6867C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlossyButton/GlossyButton-Prefix.pch";
+				INFOPLIST_FILE = "GlossyButton/GlossyButton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C374B74B1607C95F00D6867C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GlossyButton.app/GlossyButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlossyButton/GlossyButton-Prefix.pch";
+				INFOPLIST_FILE = "GlossyButtonTests/GlossyButtonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C374B74C1607C95F00D6867C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GlossyButton.app/GlossyButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlossyButton/GlossyButton-Prefix.pch";
+				INFOPLIST_FILE = "GlossyButtonTests/GlossyButtonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C374B70B1607C95F00D6867C /* Build configuration list for PBXProject "GlossyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C374B7451607C95F00D6867C /* Debug */,
+				C374B7461607C95F00D6867C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C374B7471607C95F00D6867C /* Build configuration list for PBXNativeTarget "GlossyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C374B7481607C95F00D6867C /* Debug */,
+				C374B7491607C95F00D6867C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C374B74A1607C95F00D6867C /* Build configuration list for PBXNativeTarget "GlossyButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C374B74B1607C95F00D6867C /* Debug */,
+				C374B74C1607C95F00D6867C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C374B7081607C95F00D6867C /* Project object */;
+}
