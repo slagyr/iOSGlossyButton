@@ -4,9 +4,10 @@
 
 @interface GlossyButton ()
 
-@property (readwrite, assign) CAGradientLayer* backgroundLayer;
-@property (readwrite, assign) CAGradientLayer* foregroundLayer;
-@property (readwrite, assign) CATextLayer* textLayer;
+@property(readwrite, assign) CAGradientLayer* backgroundLayer;
+@property(readwrite, assign) CAGradientLayer* foregroundLayer;
+@property(readwrite, assign) CATextLayer* textLayer;
+@property(nonatomic) CGFloat textHeight;
 
 @end
 
@@ -16,11 +17,22 @@
   self = [super initWithCoder:aDecoder];
   if (self) {
     self.cornerRadius = 9.0;
-    self.padding = 1.0;
+    self.topLeftRounded = true;
+    self.topRightRounded = true;
+    self.bottomRightRounded = true;
+    self.bottomLeftRounded = true;
+    [self setBorderWidth: 1.0];
     self.borderColor = [UIColor colorWithRed:0.35 green:0.35 blue:0.35 alpha:1.0];
   }
 
   return self;
+}
+
+- (void) setBorderWidth:(float)w {
+  self.topBorderWidth = w;
+  self.rightBorderWidth = w;
+  self.bottomBorderWidth = w;
+  self.leftBorderWidth = w;
 }
 
 - (void) awakeFromNib {
@@ -29,12 +41,22 @@
   self.layer.backgroundColor = [UIColor clearColor].CGColor;
 }
 
+- (UIColor*) lighterColor:(UIColor*)color {
+  CGFloat r, g, b;
+  [color getRed:&r green:&g blue:&b alpha:NULL];
+  r = MIN(1.0, r * 1.25);
+  g = MIN(1.0, g * 1.25);
+  b = MIN(1.0, b * 1.25);
+  UIColor* lighterColor = [UIColor colorWithRed:r green:g blue:b alpha:1.0];
+  return lighterColor;
+}
+
 - (void) buildTextLayer {
   self.textLayer = [CATextLayer layer];
   self.textLayer.string = self.currentTitle;
   self.textLayer.foregroundColor = self.currentTitleColor.CGColor;
 
-  CGFontRef font = CGFontCreateWithFontName((void*)self.titleLabel.font.fontName);
+  CGFontRef font = CGFontCreateWithFontName((void*) self.titleLabel.font.fontName);
   self.textLayer.font = font;
   CGFontRelease(font);
 
@@ -57,9 +79,8 @@
   self.foregroundLayer = [CAGradientLayer layer];
 
   UIColor* lighterColor = [self lighterColor:self.rootColor];
-  self.foregroundLayer.colors = @[(id)lighterColor.CGColor,(id)self.rootColor.CGColor];
+  self.foregroundLayer.colors = @[(id) lighterColor.CGColor, (id) self.rootColor.CGColor];
   self.foregroundLayer.locations = @[@(0.0), @(1.0)];
-  self.foregroundLayer.cornerRadius = self.cornerRadius - 1.0;
 
   self.foregroundLayer.shadowColor = [UIColor lightGrayColor].CGColor;
   self.foregroundLayer.shadowOffset = CGSizeMake(0.0, -1.0);
@@ -69,23 +90,13 @@
   [self.backgroundLayer addSublayer:self.foregroundLayer];
 }
 
-- (UIColor*) lighterColor:(UIColor*)color {
-  CGFloat r, g, b;
-  [color getRed:&r green:&g blue:&b alpha:NULL];
-  r = MIN(1.0, r * 1.25);
-  g = MIN(1.0, g * 1.25);
-  b = MIN(1.0, b * 1.25);
-  UIColor* lighterColor = [UIColor colorWithRed:r green:g blue:b alpha:1.0];
-  return lighterColor;
-}
-
 - (void) buildGlareLayer {
   self.glareLayer = [CAGradientLayer layer];
 
   UIColor* top = [UIColor colorWithWhite:1.0 alpha:0.70];
   UIColor* bottom = [UIColor colorWithWhite:1.0 alpha:0.15];
 
-  self.glareLayer.colors = @[(id)top.CGColor,(id)bottom.CGColor];
+  self.glareLayer.colors = @[(id) top.CGColor, (id) bottom.CGColor];
   self.glareLayer.locations = @[@(0.0), @(1.0)];
   self.glareLayer.contentsScale = [[UIScreen mainScreen] scale];
   [self.foregroundLayer addSublayer:self.glareLayer];
@@ -94,14 +105,13 @@
 - (void) buildBackgroundLayer {
   self.backgroundLayer = [CAGradientLayer layer];
   UIColor* lighterColor = [self lighterColor:self.borderColor];
-  self.backgroundLayer.colors = @[(id) lighterColor.CGColor,(id)self.borderColor.CGColor];
+  self.backgroundLayer.colors = @[(id) lighterColor.CGColor, (id) self.borderColor.CGColor];
   self.backgroundLayer.locations = @[@(0.0), @(1.0)];
-  self.backgroundLayer.cornerRadius = self.cornerRadius;
   self.backgroundLayer.contentsScale = [[UIScreen mainScreen] scale];
   [self.layer addSublayer:self.backgroundLayer];
 }
 
-- (void)layoutSubviews {
+- (void) layoutSubviews {
   [self layoutBackgroundLayer];
   [self layoutForeground];
   [self layoutGlare];
@@ -109,13 +119,19 @@
 }
 
 - (void) layoutBackgroundLayer {
-  if(self.backgroundLayer == nil)
+  if (self.backgroundLayer == nil)
     [self buildBackgroundLayer];
   self.backgroundLayer.frame = self.layer.bounds;
+  if (self.cornerRadius > 0) {
+    [self addCornerRadii:self.cornerRadius
+                 toLayer:self.backgroundLayer
+                 topLeft:self.topLeftRounded topRight:self.topRightRounded
+             bottomRight:self.bottomRightRounded bottomLeft:self.bottomLeftRounded];
+  }
 }
 
 - (void) layoutText {
-  if(self.textLayer == nil)
+  if (self.textLayer == nil)
     [self buildTextLayer];
   CGRect textBounds = self.foregroundLayer.bounds;
 
@@ -128,26 +144,53 @@
 - (void) layoutForeground {
   if (self.foregroundLayer == nil)
     [self buildForegroundLayer];
-  CGRect innerRect = CGRectInset(self.backgroundLayer.frame, self.padding, self.padding);
+  CGRect frame = self.backgroundLayer.frame;
+  frame.origin.x = self.leftBorderWidth;
+  frame.origin.y = self.topBorderWidth;
+  frame.size.width = frame.size.width - self.leftBorderWidth - self.rightBorderWidth;
+  frame.size.height = frame.size.height - self.topBorderWidth - self.bottomBorderWidth;
+  CGRect innerRect = frame;
   self.foregroundLayer.frame = innerRect;
+  if (self.cornerRadius > 1.0) {
+    [self addCornerRadii:self.cornerRadius - 1.0
+                 toLayer:self.foregroundLayer
+                 topLeft:self.topLeftRounded topRight:self.topRightRounded
+             bottomRight:self.bottomRightRounded bottomLeft:self.bottomLeftRounded];
+  }
 }
 
 - (void) layoutGlare {
-  if(self.glareLayer == nil)
+  if (self.glareLayer == nil)
     [self buildGlareLayer];
-  CGRect glareBounds = self.foregroundLayer.bounds;
-  glareBounds.size.height = glareBounds.size.height / 2.0 - 1;
-  self.glareLayer.frame = glareBounds;
-  float radius = self.cornerRadius - 2.0;
-  UIBezierPath* maskPath = [UIBezierPath bezierPathWithRoundedRect:self.glareLayer.bounds
-                                                 byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight
+  CGRect frame = self.foregroundLayer.bounds;
+  frame.size.height = frame.size.height / 2.0 - 1;
+  self.glareLayer.frame = frame;
+  if (self.cornerRadius > 2.0) {
+    [self addCornerRadii:self.cornerRadius - 2.0
+                 toLayer:self.glareLayer
+                 topLeft:self.topLeftRounded topRight:self.topRightRounded
+             bottomRight:false bottomLeft:false];
+  }
+}
+
+- (void) addCornerRadii:(float)radius toLayer:(CAGradientLayer*)layer topLeft:(bool)topLeft topRight:(bool)topRight bottomRight:(bool)bottomRight bottomLeft:(bool)bottomLeft {
+  UIRectCorner corners = 0;
+  corners |= (topLeft ? UIRectCornerTopLeft : 0);
+  corners |= (topRight ? UIRectCornerTopRight : 0);
+  corners |= (bottomRight ? UIRectCornerBottomRight : 0);
+  corners |= (bottomLeft ? UIRectCornerBottomLeft : 0);
+  NSLog(@"corners = %u", corners);
+  if (corners == 0)
+    return;
+  NSLog(@"got corners!");
+  UIBezierPath* maskPath = [UIBezierPath bezierPathWithRoundedRect:layer.bounds
+                                                 byRoundingCorners:corners
                                                        cornerRadii:CGSizeMake(radius, radius)];
 
   CAShapeLayer* maskLayer = [CAShapeLayer layer];
-  maskLayer.frame = self.glareLayer.bounds;
+  maskLayer.frame = layer.bounds;
   maskLayer.path = maskPath.CGPath;
-
-  self.glareLayer.mask = maskLayer;
+  layer.mask = maskLayer;
 }
 
 @end

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c153261b-7dda-4628-886b-e8f9df7ac38f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GlossyButton/MyButton.h" afterPath="$PROJECT_DIR$/GlossyButton/GlossyButton.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GlossyButton/MyButton.m" afterPath="$PROJECT_DIR$/GlossyButton/GlossyButton.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlossyButton.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/GlossyButton.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlossyButton/GlossyButton.h" afterPath="$PROJECT_DIR$/GlossyButton/GlossyButton.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlossyButton/GlossyButton.m" afterPath="$PROJECT_DIR$/GlossyButton/GlossyButton.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlossyButton/en.lproj/MainStoryboard_iPhone.storyboard" afterPath="$PROJECT_DIR$/GlossyButton/en.lproj/MainStoryboard_iPhone.storyboard" />
     </list>
     <ignored path="GlossyButton.iws" />
@@ -25,15 +24,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_5.1_1" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GlossyButton.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="38" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UIColor.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,10 +42,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UIBezierPath.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="4" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlossyButton.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="57" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GlossyButton.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="23" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07968128">
+            <state line="143" column="43" selection-start="4715" selection-end="4715" vertical-scroll-proportion="0.41580042">
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -79,6 +87,7 @@
         <option value="$PROJECT_DIR$/GlossyButton/MyButton.h" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/GlossyButton/MyButton.m" />
+        <option value="$PROJECT_DIR$/GlossyButton/GlossyButton.h" />
         <option value="$PROJECT_DIR$/GlossyButton/GlossyButton.m" />
       </list>
     </option>
@@ -140,6 +149,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="GlossyButton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlossyButton" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlossyButton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlossyButton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlossyButton" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlossyButton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlossyButton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="en.lproj" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,11 +286,12 @@
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.251235" sideWeight="0.99722224" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28475836" sideWeight="0.96807253" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.251235" sideWeight="0.6679487" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33205128" sideWeight="0.96807253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -258,7 +300,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -379,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GlossyButton/main.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="246" selection-end="246" vertical-scroll-proportion="0.25490198">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="13" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
@@ -400,16 +434,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="10" selection-start="368" selection-end="368" vertical-scroll-proportion="0.3318182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="38" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+        <state line="8" column="57" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlossyButton/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="246" selection-end="246" vertical-scroll-proportion="0.39473686">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07968128">
+        <state line="143" column="43" selection-start="4715" selection-end="4715" vertical-scroll-proportion="0.41580042">
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
