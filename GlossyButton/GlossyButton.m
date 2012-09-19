@@ -1,8 +1,8 @@
-#import "MyButton.h"
+#import "GlossyButton.h"
 #import <QuartzCore/QuartzCore.h>
 
 
-@interface MyButton ()
+@interface GlossyButton ()
 
 @property (readwrite, assign) CAGradientLayer* backgroundLayer;
 @property (readwrite, assign) CAGradientLayer* foregroundLayer;
@@ -10,7 +10,7 @@
 
 @end
 
-@implementation MyButton
+@implementation GlossyButton
 
 - (id) initWithCoder:(NSCoder*)aDecoder {
   self = [super initWithCoder:aDecoder];

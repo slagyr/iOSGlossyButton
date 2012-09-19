@@ -3,7 +3,7 @@
 @class CAGradientLayer;
 
 
-@interface MyButton : UIButton
+@interface GlossyButton : UIButton
 @property(nonatomic, strong) UIColor* rootColor;
 @property(nonatomic, copy) NSString* text;
 @property(nonatomic, retain) CAGradientLayer* glareLayer;

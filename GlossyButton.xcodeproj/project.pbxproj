@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		875D388572EEDA3DEAA2189B /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 875D38BA60578C36607EFAF9 /* MyButton.m */; };
-		875D39B28A36A15947DC5436 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 875D38BA60578C36607EFAF9 /* MyButton.m */; };
+		875D388572EEDA3DEAA2189B /* GlossyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 875D38BA60578C36607EFAF9 /* GlossyButton.m */; };
+		875D39B28A36A15947DC5436 /* GlossyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 875D38BA60578C36607EFAF9 /* GlossyButton.m */; };
 		875D3E18CCEA5263F822B2F5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875D3FC17E767E5B31509B91 /* CoreText.framework */; };
 		875D3EAA1E03866CD0E13657 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875D3B031E8E7085E1101AE7 /* QuartzCore.framework */; };
 		C374B7161607C95F00D6867C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C374B7151607C95F00D6867C /* UIKit.framework */; };
@@ -38,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		875D35F0D59AAF90A193E373 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
-		875D38BA60578C36607EFAF9 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		875D35F0D59AAF90A193E373 /* GlossyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossyButton.h; sourceTree = "<group>"; };
+		875D38BA60578C36607EFAF9 /* GlossyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossyButton.m; sourceTree = "<group>"; };
 		875D3B031E8E7085E1101AE7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		875D3FC17E767E5B31509B91 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		C374B7111607C95F00D6867C /* GlossyButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlossyButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,8 +125,8 @@
 		C374B71B1607C95F00D6867C /* GlossyButton */ = {
 			isa = PBXGroup;
 			children = (
-				875D35F0D59AAF90A193E373 /* MyButton.h */,
-				875D38BA60578C36607EFAF9 /* MyButton.m */,
+				875D35F0D59AAF90A193E373 /* GlossyButton.h */,
+				875D38BA60578C36607EFAF9 /* GlossyButton.m */,
 				C374B7241607C95F00D6867C /* ELAppDelegate.h */,
 				C374B7251607C95F00D6867C /* ELAppDelegate.m */,
 				C374B7271607C95F00D6867C /* MainStoryboard_iPhone.storyboard */,
@@ -280,7 +280,7 @@
 				C374B7221607C95F00D6867C /* main.m in Sources */,
 				C374B7261607C95F00D6867C /* ELAppDelegate.m in Sources */,
 				C374B72F1607C95F00D6867C /* ELViewController.m in Sources */,
-				875D388572EEDA3DEAA2189B /* MyButton.m in Sources */,
+				875D388572EEDA3DEAA2189B /* GlossyButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C374B7441607C95F00D6867C /* GlossyButtonTests.m in Sources */,
-				875D39B28A36A15947DC5436 /* MyButton.m in Sources */,
+				875D39B28A36A15947DC5436 /* GlossyButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

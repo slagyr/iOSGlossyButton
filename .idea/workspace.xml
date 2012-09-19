@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c153261b-7dda-4628-886b-e8f9df7ac38f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GlossyButton/MyButton.h" afterPath="$PROJECT_DIR$/GlossyButton/GlossyButton.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GlossyButton/MyButton.m" afterPath="$PROJECT_DIR$/GlossyButton/GlossyButton.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlossyButton.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/GlossyButton.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlossyButton/en.lproj/MainStoryboard_iPhone.storyboard" afterPath="$PROJECT_DIR$/GlossyButton/en.lproj/MainStoryboard_iPhone.storyboard" />
     </list>
     <ignored path="GlossyButton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,10 +25,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_5.1_1" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyButton.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.h">
+      <file leaf-file-name="GlossyButton.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="38" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+            <state line="12" column="38" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -40,21 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="38" selection-start="174" selection-end="174" vertical-scroll-proportion="0.05800464">
+            <state line="5" column="38" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyButton.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.m">
+      <file leaf-file-name="GlossyButton.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="26" selection-start="3674" selection-end="3674" vertical-scroll-proportion="0.0">
+            <state line="4" column="23" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07968128">
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,15 +77,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/GlossyButton/MyButton.h" />
-        <option value="$PROJECT_DIR$/GlossyButton/MyButton.m" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/GlossyButton/MyButton.m" />
+        <option value="$PROJECT_DIR$/GlossyButton/GlossyButton.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="2560" />
-    <option name="height" value="1414" />
+    <option name="width" value="1440" />
+    <option name="height" value="874" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -238,13 +242,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2560" height="1414" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14032322" sideWeight="0.7151515" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.251235" sideWeight="0.99722224" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28475836" sideWeight="0.96807253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -320,11 +324,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.m">
+    <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="41" selection-start="2264" selection-end="2264" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -336,39 +340,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.h">
+    <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="38" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.m">
+    <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="75" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.h">
+    <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="4" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.m">
+    <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="45" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.h">
+    <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="4" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
           <folding />
@@ -389,26 +393,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="38" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlossyButton/MyButton.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="26" selection-start="3674" selection-end="3674" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="38" selection-start="174" selection-end="174" vertical-scroll-proportion="0.05800464">
+        <state line="5" column="38" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="38" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlossyButton/GlossyButton.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07968128">
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
