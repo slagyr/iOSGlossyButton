@@ -4,9 +4,8 @@
 
 
 @interface GlossyButton : UIButton
-@property(nonatomic, strong) UIColor* rootColor;
 @property(nonatomic, copy) NSString* text;
-@property(nonatomic, retain) CAGradientLayer* glareLayer;
+@property(nonatomic, strong) UIColor* rootColor;
 @property(nonatomic, retain) UIColor* borderColor;
 @property(nonatomic) float cornerRadius;
 @property(nonatomic) bool topLeftRounded;

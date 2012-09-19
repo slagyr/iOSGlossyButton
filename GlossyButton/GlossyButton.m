@@ -6,7 +6,9 @@
 
 @property(readwrite, assign) CAGradientLayer* backgroundLayer;
 @property(readwrite, assign) CAGradientLayer* foregroundLayer;
+@property(nonatomic, retain) CAGradientLayer* glareLayer;
 @property(readwrite, assign) CATextLayer* textLayer;
+@property(readwrite, assign) CALayer* highlightLayer;
 @property(nonatomic) CGFloat textHeight;
 
 @end
@@ -16,12 +18,13 @@
 - (id) initWithCoder:(NSCoder*)aDecoder {
   self = [super initWithCoder:aDecoder];
   if (self) {
+    self.rootColor = [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0];
     self.cornerRadius = 9.0;
     self.topLeftRounded = true;
     self.topRightRounded = true;
     self.bottomRightRounded = true;
     self.bottomLeftRounded = true;
-    [self setBorderWidth: 1.0];
+    [self setBorderWidth:1.0];
     self.borderColor = [UIColor colorWithRed:0.35 green:0.35 blue:0.35 alpha:1.0];
   }
 
@@ -37,7 +40,8 @@
 
 - (void) awakeFromNib {
   [super awakeFromNib];
-  self.rootColor = self.backgroundColor == nil ? [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0] : self.backgroundColor;
+  if (self.backgroundColor)
+    self.rootColor = self.backgroundColor;
   self.layer.backgroundColor = [UIColor clearColor].CGColor;
 }
 
@@ -111,11 +115,38 @@
   [self.layer addSublayer:self.backgroundLayer];
 }
 
+- (void) buildHighlightLayer {
+  self.highlightLayer = [CALayer layer];
+  self.highlightLayer.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5].CGColor;
+  [self.foregroundLayer addSublayer:self.highlightLayer];
+}
+
 - (void) layoutSubviews {
   [self layoutBackgroundLayer];
   [self layoutForeground];
   [self layoutGlare];
+  if (self.isHighlighted) {
+    self.highlightLayer.hidden = false;
+    [self layoutHighlight];
+  }
+  else
+    self.highlightLayer.hidden = true;
   [self layoutText];
+}
+
+- (void) layoutHighlight {
+  if (self.highlightLayer == nil)
+    [self buildHighlightLayer];
+  CGRect frame = self.foregroundLayer.frame;
+  frame.origin.x = 0;
+  frame.origin.y = 0;
+  self.highlightLayer.frame = frame;
+  if (self.cornerRadius > 1.0) {
+    [self addCornerRadii:self.cornerRadius - 1.0
+                 toLayer:self.highlightLayer
+                 topLeft:self.topLeftRounded topRight:self.topRightRounded
+             bottomRight:self.bottomRightRounded bottomLeft:self.bottomLeftRounded];
+  }
 }
 
 - (void) layoutBackgroundLayer {
@@ -179,10 +210,8 @@
   corners |= (topRight ? UIRectCornerTopRight : 0);
   corners |= (bottomRight ? UIRectCornerBottomRight : 0);
   corners |= (bottomLeft ? UIRectCornerBottomLeft : 0);
-  NSLog(@"corners = %u", corners);
   if (corners == 0)
     return;
-  NSLog(@"got corners!");
   UIBezierPath* maskPath = [UIBezierPath bezierPathWithRoundedRect:layer.bounds
                                                  byRoundingCorners:corners
                                                        cornerRadii:CGSizeMake(radius, radius)];
