@@ -15,20 +15,29 @@
 
 @implementation GlossyButton
 
+- (id) initWithFrame:(CGRect)frame {
+  self = [super initWithFrame:frame];
+  if (self)
+    [self initDefaultProperties];
+  return self;
+}
+
 - (id) initWithCoder:(NSCoder*)aDecoder {
   self = [super initWithCoder:aDecoder];
-  if (self) {
-    self.rootColor = [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0];
-    self.cornerRadius = 9.0;
-    self.topLeftRounded = true;
-    self.topRightRounded = true;
-    self.bottomRightRounded = true;
-    self.bottomLeftRounded = true;
-    [self setBorderWidth:1.0];
-    self.borderColor = [UIColor colorWithRed:0.35 green:0.35 blue:0.35 alpha:1.0];
-  }
-
+  if (self)
+    [self initDefaultProperties];
   return self;
+}
+
+- (void) initDefaultProperties {
+  self.rootColor = [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0];
+  self.cornerRadius = 9.0;
+  self.topLeftRounded = true;
+  self.topRightRounded = true;
+  self.bottomRightRounded = true;
+  self.bottomLeftRounded = true;
+  [self setBorderWidth:1.0];
+  self.borderColor = [UIColor colorWithRed:0.35 green:0.35 blue:0.35 alpha:1.0];
 }
 
 - (void) setBorderWidth:(float)w {
@@ -57,8 +66,6 @@
 
 - (void) buildTextLayer {
   self.textLayer = [CATextLayer layer];
-  self.textLayer.string = self.currentTitle;
-  self.textLayer.foregroundColor = self.currentTitleColor.CGColor;
 
   CGFontRef font = CGFontCreateWithFontName((void*) self.titleLabel.font.fontName);
   self.textLayer.font = font;
@@ -67,13 +74,12 @@
   self.textLayer.fontSize = self.titleLabel.font.pointSize;
   self.textLayer.alignmentMode = kCAAlignmentCenter;
 
-  self.textLayer.shadowColor = self.currentTitleShadowColor.CGColor;
   self.textLayer.shadowOffset = CGSizeMake(0.0, -1.0);
   self.textLayer.shadowOpacity = 1.0;
   self.textLayer.shadowRadius = 0.0;
   self.textLayer.contentsScale = [[UIScreen mainScreen] scale];
 
-  CGSize textSize = [self.textLayer.string sizeWithFont:self.titleLabel.font];
+  CGSize textSize = [@"Aj" sizeWithFont:self.titleLabel.font];
   self.textHeight = textSize.height + self.titleLabel.font.descender;
 
   [self.foregroundLayer addSublayer:self.textLayer];
@@ -125,13 +131,9 @@
   [self layoutBackgroundLayer];
   [self layoutForeground];
   [self layoutGlare];
-  if (self.isHighlighted) {
-    self.highlightLayer.hidden = false;
-    [self layoutHighlight];
-  }
-  else
-    self.highlightLayer.hidden = true;
+  [self layoutHighlight];
   [self layoutText];
+  self.highlightLayer.hidden = !self.isHighlighted;
 }
 
 - (void) layoutHighlight {
@@ -164,8 +166,12 @@
 - (void) layoutText {
   if (self.textLayer == nil)
     [self buildTextLayer];
-  CGRect textBounds = self.foregroundLayer.bounds;
 
+  self.textLayer.string = self.currentTitle;
+  self.textLayer.foregroundColor = self.currentTitleColor.CGColor;
+  self.textLayer.shadowColor = self.currentTitleShadowColor.CGColor;
+
+  CGRect textBounds = self.foregroundLayer.bounds;
   CGFloat yInset = (textBounds.size.height - self.textHeight) / 2.0;
 
   textBounds = CGRectInset(textBounds, 0.0, yInset);
@@ -204,7 +210,7 @@
   }
 }
 
-- (void) addCornerRadii:(float)radius toLayer:(CAGradientLayer*)layer topLeft:(bool)topLeft topRight:(bool)topRight bottomRight:(bool)bottomRight bottomLeft:(bool)bottomLeft {
+- (void) addCornerRadii:(float)radius toLayer:(CALayer*)layer topLeft:(bool)topLeft topRight:(bool)topRight bottomRight:(bool)bottomRight bottomLeft:(bool)bottomLeft {
   UIRectCorner corners = 0;
   corners |= (topLeft ? UIRectCornerTopLeft : 0);
   corners |= (topRight ? UIRectCornerTopRight : 0);
